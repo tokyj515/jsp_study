@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<%
+pageContext.setAttribute("result", "hello"); //페이지객체
+%>
+<body>
+	<%=request.getAttribute("result") %>입니다.
+	EL방식 사용: ${result} <br >
+	${names[1]} <br >
+	${notice.title}
+	${notice.id}<br >
+	${result}  <!-- page에 있는 hello -->
+	${requestScope.result}<br > <!-- request에 있는 짝수 -->
+	${param.n gt 3}
+	${empty param.n}
+	${param.n == null || param.n == ""}<br >
+	${header.accept}
+	
+</body> 
+</html>

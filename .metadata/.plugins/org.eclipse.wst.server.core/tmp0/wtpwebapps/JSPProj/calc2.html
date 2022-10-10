@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상태 유지 계산기</title>
+</head>
+<body>
+	<form action="calc2" method="post">
+		<div>
+		<!-- 값을 하나씩 입력받고 그 값을 서버에 저장해놨다가 그 다음 들어오는 값과 연산 진행 -->
+			<label>입력: </label>
+			<input type="text" name="v" />
+		</div>
+		<div>
+			<input type="submit" name="operator" value="+" />
+			<input type="submit" name="operator" value="-" />
+			<input type="submit" name="operator" value="=" />
+		</div>
+		<div>
+			결과: 0
+		</div>
+		
+	</form>
+</body>
+</html>
+
+
+
+
+

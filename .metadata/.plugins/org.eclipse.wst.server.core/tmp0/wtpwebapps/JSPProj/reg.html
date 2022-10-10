@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>입력폼</title>
+</head>
+<body>
+	<div>
+		<!-- <form action="notice-reg">  notice-reg 서블릿코드-->
+		<!-- 그냥 액션만 쓰면 이 모든 정보가 url의 쿼리스트링으로 써져서 비효율적
+			메소드를 통해 처리해야함, 요청바디 -->
+		<!-- post를 통해 보내면 html의 body부분에 적히는 것으로 문자열의 길이가 상관 없음 
+			but 한글은 post하면 깨짐-->
+		<form action="notice-reg" method="post">
+			<div>
+				<label>제목: </label><input name="title" type="text">
+			</div>
+			<div>
+				<label>내용: </label>
+				<textarea name="content"></textarea>
+			</div>
+			<div>
+				<input type="submit" value="등록"/>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
